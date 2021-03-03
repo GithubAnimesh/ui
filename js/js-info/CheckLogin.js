@@ -8,8 +8,8 @@ let userName = prompt("Who's there?", '');
   } else {
  alert( 'Wrong password' );
  }
- { else if (userName === '' || userName === null) {
+ } else if (userName === '' || userName === null) {
  alert( 'Canceled' );
  } else {
- alert( "I don't know you" );
+ alert( "I don't know you");
  }
