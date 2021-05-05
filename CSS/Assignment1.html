@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Storybook</title>
+    <style media="screen">
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+      margin:0;
+      background: black;
+    }
+    .mySlides {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+
+    img {
+    vertical-align: middle;
+    }
+    .app-title{
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    color: white;
+    }
+
+    .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    }
+
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    }
+
+    .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    }
+
+    .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    }
+
+    .heading-text {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 51%;
+
+    }
+
+    .heading-text .title{
+    font-size: 4em;
+    background: #0000009c;
+    }
+
+    .heading-text .known-for{
+    font-size: 2.5em;
+    background: #0000009c;
+    }
+
+    .active {
+    background-color: #717171;
+    }
+
+    .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
+
+    @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+    }
+
+    @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+    }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="app-title">Storybook</h1>
+      <div class="slideshow-container">
+          <a target="_blank" href="#">
+            <div class="mySlides fade">
+              <div class="heading-text">
+                <h1 class="title">name</h1>
+                <p class="known-for">knownFor</p>
+              </div>
+              <img src="#"/>
+            </div>
+          </a>
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+      </div>
+    </div>
+    <script type="text/javascript">
+      const data = [
+          {
+            "id": 1,
+            "name": "Mohandas Karamchand Gandhi",
+            "image": "https://cdn.skillenza.com/files/58f6b8c0-74b0-4f41-b17c-71f77aacb61c/220px-Mahatma-Gandhi_studio_1931.jpg",
+            "knownFor": "Leadership of the campaign for India's independence from British rule, Nonviolent resistance",
+            "url": "https://en.wikipedia.org/wiki/Mahatma_Gandhi"
+          },
+          {
+            "id": 2,
+            "name": "Narendra Modi",
+            "image": "https://cdn.skillenza.com/files/aaa65dcc-c42c-4512-94ee-44076da0f764/225px-Prime_Minister_Shri_Narendra_Modi_in_New_Delhi_on_August_08_2019_cropped.webp",
+            "knownFor": "The prime minister of India officially the Prime Minister of the Republic of India is the leader of the executive branch of the Government of India.",
+            "url": "https://en.wikipedia.org/wiki/Mahatma_Gandhi"
+          }
+      ]
+
+      // your code here
+    </script>
+  </body>
+</html>
