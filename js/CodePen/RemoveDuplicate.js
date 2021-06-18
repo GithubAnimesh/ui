@@ -11,3 +11,23 @@ function removeDupli(arr) {
   return point1++;
 }
 removeDupli(arr);
+
+
+// With java script data types.
+
+let arr = [1, 3, 3, 3, 5, 5];
+let dupli = [...new Set(arr)];  // using spread operator to convert set to array.
+
+console.log(dupli);
+
+
+// Brute force algorithm
+
+let arr = [1, 3, 3, 3, 5, 5];
+let dupli = [];
+for(let i = 0; i < arr.length; i++){
+  if(dupli.indexOf(arr[i]) === -1){    // we check here find arr[i] in to dupli   
+    dupli.push(arr[i]);
+  }
+}
+console.log(dupli);

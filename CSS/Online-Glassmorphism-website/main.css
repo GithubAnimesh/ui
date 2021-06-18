@@ -148,7 +148,33 @@ header ul li a.active {
     transform: scale(0.6) rotate(360deg);
 }
 
-
+@media(max-width: 1200px) {
+  .container{
+    position: relative;
+    width: calc(100% - 20px) ;
+  }
+}
+@media(max-width: 992px){
+  section{
+    padding: 50px 10px 10px;
+  }
+  .container{
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+  header{    
+    position: absolute;
+    top: -40px;
+  }
+  .content{
+    width: 100%;
+    position: absolute;
+    transform: translateX(0px);
+    padding: 30px;
+    margin-top: 20px;
+  }
+}
 
 
 
