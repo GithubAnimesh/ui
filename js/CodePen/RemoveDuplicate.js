@@ -26,7 +26,7 @@ console.log(dupli);
 let arr = [1, 3, 3, 3, 5, 5];
 let dupli = [];
 for(let i = 0; i < arr.length; i++){
-  if(dupli.indexOf(arr[i]) === -1){    // we check here find arr[i] in to dupli   
+  if(dupli.indexOf(arr[i]) === -1){    // we check here  arr[i] in to dupli   
     dupli.push(arr[i]);
   }
 }
